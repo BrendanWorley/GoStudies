@@ -1,0 +1,58 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	manufacturers := [3]string {"Boeing", "Airbus", "Douglas"}
+
+	types := [...]string {"A320", "B737", "B717", "MD-80", "MD-11"}
+
+	for _, value1 := range manufacturers {
+
+		if value1 == "Boeing" {
+
+			for _, value2 := range types {
+
+				if value2 == "B737" || value2 == "B717" {
+
+					fmt.Printf("For %s matshing type is: %s\n", value1, value2)
+					
+
+				} 
+
+			}
+
+		};  
+		
+		if value1 == "Douglas" {
+
+			for _, value2 := range types {
+
+				if value2 == "MD-80" || value2 == "MD-11" {
+
+					fmt.Printf("For %s matshing type is: %s\n", value1, value2)
+
+				}
+
+			} 
+		}; if value1 == "Airbus" {
+
+			for _, value2 := range types {
+
+				if value2 == "A320" {
+
+					fmt.Printf("For %s matshing type is: %s\n", value1, value2)
+
+				}
+
+			}
+
+		}
+
+
+	}
+
+}
